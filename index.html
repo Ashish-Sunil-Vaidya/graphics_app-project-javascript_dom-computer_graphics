@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+
+        #mydiv {
+            margin: auto;
+            margin: 50px;
+            width: 900px;
+            height: 400px;
+        }
+
+        #mydiv div {
+            display: block;
+            float: left;
+            width: 10px;
+            height: 10px;
+            border: none;
+            background-color: white;
+            cursor: none;
+
+        }
+
+        #mydiv div:hover {
+         background-color: red;
+        }
+
+
+        #button_css {
+            background-color: orange;
+            padding: 10px;
+        }
+
+        #ShapeMenu {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 100px;
+            height: 100vh;
+            background-color: aliceblue;
+            font-size: 30px;
+            text-align: center;
+            color: dodgerblue;
+        
+        }
+
+        li {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="palletoptions"><button id="button_css" onclick="change_color()">Change pen color</button>
+        <button id="button_css" onclick="Eraser()">Eraser</button>
+        <button id="button_css" onclick="Pen()">Pen</button>
+        <button id="button_css" onclick="clear_screen()">Reset Screen</button>
+        <button id="button_css" onclick="change_bg()">Change Background Color</button>
+    </div>
+    <div id="mydiv"></div>
+    <div id="ShapeMenu">Select Shape
+        <ul style="list-style-type: none;">
+            <li><button id="button_css" onclick="draw_line()">Line</button></li>
+            <li><button id="button_css" onclick="draw_circle()">Circle</button></li>
+
+        </ul>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
